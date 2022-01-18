@@ -1,0 +1,18 @@
+.table-td {
+  text-align: left;
+  padding: 10px;
+  font-size: 17px;
+
+}
+
+.table-body tr td:first-child {
+  cursor: pointer;
+}
+
+.table-body tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.table-body tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
