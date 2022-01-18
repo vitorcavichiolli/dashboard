@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from 'react';
-import { ChartTitle } from '../ChartTitle';
 import { Chart } from "react-google-charts";
 import './styles.css'
 
