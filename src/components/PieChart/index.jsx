@@ -23,7 +23,6 @@ export const PieChart = ({ title }) => {
       colors: ['#55E6C1', '#74b9ff', '#FC427B'],
       is3D: true,
     }
-    console.log(data);
     setData(data);
     setOptions(options);
 

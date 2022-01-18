@@ -9,6 +9,7 @@ export const LineChart = ({ title }) => {
   const [data, setData] = useState([]);
   const [options, setOptions] = useState([]);
 
+
   const handleLoadData = useCallback(async () => {
     const data = [
       ["Mês", "ITUB4", "VALE3", "PETR4"],
@@ -33,15 +34,16 @@ export const LineChart = ({ title }) => {
       lineWidth: 7,
       hAxis: {
         title: "Data",
-        textStyle: { color: 'white' }
+        textStyle: { color: 'white' },
+        titleTextStyle: { color: "white" },
       },
       vAxis: {
-        title: "Valor",
+        title: "Valor BRL",
         textStyle: { color: 'white' },
+        titleTextStyle: { color: "white" },
       }
     }
 
-    console.log(data);
     setData(data);
     setOptions(options);
   }, []);

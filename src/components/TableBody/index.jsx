@@ -4,11 +4,11 @@ import { Component } from 'react/cjs/react.production.min';
 
 export class TableBody extends Component {
   render() {
-    const { data } = this.props;
+    const { data, handleClick } = this.props;
     return (
       <tbody className="table-body">
         {data.map(d => (
-          <tr key={d.symbol}>
+          <tr id={d.symbol} key={d.symbol} onClick={handleClick}>
             <Td key={"symbol-" + d.symbol} text={d.symbol} />
             <Td key={"name-" + d.symbol} text={d.name} />
             <Td key={"prize-" + d.symbol} text={d.prize} />

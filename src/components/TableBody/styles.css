@@ -11,8 +11,12 @@
   border-radius: 10px 0 10px 0;
 }
 
+.table-body {
+  transition: all 0.3s ease-in-out;
+}
+
 .table-body tr {
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .table-body tr:hover {

@@ -5,7 +5,7 @@
 
 }
 
-.table-body tr td:first-child {
+.table-body tr td {
   cursor: pointer;
 }
 
